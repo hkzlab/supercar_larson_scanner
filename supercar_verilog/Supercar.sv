@@ -40,7 +40,7 @@ module SuperCar
           );
 
   L74x574 #(.INITIAL_VALUE(8'hFF)) U4 (
-            .i_data({4'h0, w_neg_addend, w_neg_addend, w_neg_addend, 1'b1}),
+            .i_data({4'h0, {3{w_neg_addend}}, 1'b1}),
             .i_clk(w_addend_clk),
             .i_n_oe(1'b0),
             .o_q(w_addend)
