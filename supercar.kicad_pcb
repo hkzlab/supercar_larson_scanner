@@ -3900,6 +3900,9 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f2ac4525-0024-4ac7-9831-2f18a6f3de10))
   (gr_line (start 79.375 88.265) (end 133.985 88.265)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f8b14007-240a-4676-b7bf-61def2c0505a))
+  (gr_text "Rev. 0" (at 136.525 87.63) (layer "F.SilkS") (tstamp 7947c98b-96dd-424e-9446-760b5d3cb5f2)
+    (effects (font (size 0.8 0.8) (thickness 0.1) bold) (justify left bottom))
+  )
 
   (segment (start 84.455 79.375) (end 84.455 59.9819) (width 0.3) (layer "B.Cu") (net 1) (tstamp 234cd1a4-a68c-4247-bbd5-b758bfb4dc69))
   (segment (start 84.455 59.9819) (end 83.14 58.6669) (width 0.3) (layer "B.Cu") (net 1) (tstamp 356ef755-6478-485f-b960-1e71099617f9))
