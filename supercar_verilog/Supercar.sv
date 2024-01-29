@@ -11,9 +11,7 @@ module SuperCar
   wire w_addend_clk;
 
   wire w_u5_g2_out;
-  wire w_u6_g1_out;
-  wire w_u6_g2_out;
-  wire w_u6_g3_out;
+  wire w_u5_g3_out;
 
   wire [3:0] w_inverted_led_address;
 
@@ -40,43 +38,21 @@ module SuperCar
           );
 
   L74x574 #(.INITIAL_VALUE(8'hFF)) U4 (
-            .i_data({4'h0, {3{w_neg_addend}}, 1'b1}),
+            .i_data({4'h0, {3{o_selection[0]}}, 1'b1}),
             .i_clk(w_addend_clk),
             .i_n_oe(1'b0),
             .o_q(w_addend)
           );
 
-  L74x21 U5 (
-           .i_g1(w_led_address[3:0]),
-           .o_g1(w_neg_addend),
-           .i_g2(w_inverted_led_address),
-           .o_g2(w_u5_g2_out)
-         );
-
-  L74x02 U6 (
-           .i_g1({w_neg_addend, w_u5_g2_out}),
-           .o_g1(w_u6_g1_out),
-           .i_g2({w_u6_g1_out, w_u6_g1_out}),
-           .o_g2(w_u6_g2_out),
-           .i_g3({w_u6_g2_out, w_u6_g2_out}),
-           .o_g3(w_u6_g3_out),
-           .i_g4({w_u6_g3_out, w_u6_g3_out}),
+  L74x86 U5 (
+           .i_g1(2'b00), // Unused
+           .o_g1(),
+           .i_g2({o_selection[0], o_selection[$size(o_selection)-1]}),
+           .o_g2(w_u5_g2_out),
+           .i_g3({w_u5_g2_out, 1'b1}),
+           .o_g3(w_u5_g3_out),
+           .i_g4({w_u5_g3_out, 1'b1}),
            .o_g4(w_addend_clk)
-         );
-
-  L74x04 U7 (
-           .i_g1(w_led_address[0]),
-           .o_g1(w_inverted_led_address[0]),
-           .i_g2(w_led_address[1]),
-           .o_g2(w_inverted_led_address[1]),
-           .i_g3(w_led_address[2]),
-           .o_g3(w_inverted_led_address[2]),
-           .i_g4(w_led_address[3]),
-           .o_g4(w_inverted_led_address[3]),
-           .i_g5(1'b0),
-           .o_g5(),
-           .i_g6(1'b0),
-           .o_g6()
          );
 
 endmodule
