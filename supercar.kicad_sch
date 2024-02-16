@@ -3483,7 +3483,7 @@
     (property "Value" "10K" (at 207.01 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_Array_Convex_4x1206" (at 207.01 95.885 90)
+    (property "Footprint" "Resistor_SMD:R_Array_Convex_4x0612" (at 207.01 95.885 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 102.87 0)
