@@ -1079,7 +1079,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2203fe90-406b-484d-96ae-3a7f1ec26cc8)
     )
-    (fp_text value "1K" (at 3.276 2.286 -180) (layer "F.SilkS")
+    (fp_text value "2.2K" (at 3.276 2.54 -180) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7666254b-1f0c-4070-99b5-d85abbf2223a)
     )
