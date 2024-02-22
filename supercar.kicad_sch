@@ -4495,7 +4495,7 @@
     (property "Reference" "C11" (at 63.5 80.01 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "22uF" (at 64.77 85.09 0)
+    (property "Value" "4.7uF" (at 64.77 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 59.69 82.55 0)
