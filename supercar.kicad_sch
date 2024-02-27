@@ -4663,7 +4663,7 @@
   )
 
   (symbol (lib_id "Switch:SW_SPDT") (at 90.17 161.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid f2fb5ac8-0ed0-4ce2-b864-e1f9fe67cda2)
     (property "Reference" "SW1" (at 90.17 152.4 0)
       (effects (font (size 1.27 1.27)))
@@ -4671,7 +4671,7 @@
     (property "Value" "Power" (at 90.17 154.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" (at 90.17 161.29 0)
+    (property "Footprint" "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" (at 88.9 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 90.17 168.91 0)
