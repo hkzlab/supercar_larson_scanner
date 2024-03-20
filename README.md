@@ -8,13 +8,13 @@ In that series, the iconic car KITT sports a red light going back and forth unde
 ![Rev. 3 Board animation](pics/larson_animation.gif)
 
 This board implements a "Larson scanner" with regulable speed using a 555 timer and a few 74' CMOS logic ICs (two latches, a full adder, a demux and a 4x 2-in xor gate).
+It's powered by a CR2032 coin cell battery.
 
 The circuit is quite simple to understand and a good exercise on SMD hand-soldering.
 
 ### Disclaimer
 
-I take NO responsibility for what happens if you decide to build and use this card. Your computer might crash, catch fire or be destroyed in other nasty ways.
-You're encourauged to take what you deem fit from this, and use it in your projects!
+I take NO responsibility for what happens if you decide to build and use this card. But You're encourauged to take what you deem fit from this, and use it in your projects!
 
 ## Verilog simulation
 
