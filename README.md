@@ -22,6 +22,8 @@ You can find a verilog implementation of the circuit under the `supercar_verilog
 
 ## Bill of Materials
 
+Remember to use a CMOS variant of the 555 timer compatible with a low supply voltage, like [this](https://www.mouser.it/ProductDetail/926-LMC555CMX-NOPB).
+
 **TODO**
 
 ## Required Fixes
